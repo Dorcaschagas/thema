@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Div com Before ou After</title>
+<style>
+    .div-principal {
+        position: relative;
+        width: 200px;
+        height: 100px;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    .div-principal::after,
+    .div-principal::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background-color: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .div-principal::before {
+        content: 'seu texto aqui';
+        color: rgba(255, 255, 255, 0.21);
+        font-size: 2em;
+        z-index: 1;
+    }
+    
+    .div-principal::after {
+        width: 20%;
+        top: 38%;
+        height: 30px;
+        background-color: black;
+        animation: move 3s linear infinite ; /* Adicionando animação de movimento */
+    }
+
+    /* Animação de movimento das letras */
+    @keyframes move {
+        0% {
+            left: 0;
+        }
+        100% {
+            left: 100%;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="div-principal">
+</div>
+
+</body>
+</html>

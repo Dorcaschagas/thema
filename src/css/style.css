@@ -1,0 +1,109 @@
+.navbar{
+    /* border-bottom: 1px solid; */
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.itemHover{
+    position: relative;
+    margin-left:15px ;
+}
+
+.itemHover::before{
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 4px;
+    background-color: red;
+    transition: width 300ms;
+}
+
+.itemHover:hover::before{
+    width: 100%;
+}
+
+.aos-item{
+    border: 1px solid;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(128, 128, 128, 0.483);
+    color: white;
+}
+
+.aos-all{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.slider{
+    height: 500px;
+}
+
+.slick1, .slick2, .slick3{
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    max-height: 500px;
+    height: 90vh;
+}
+
+.slick1{
+    background-image: url(../img/carros/slides/Home-Slider-1-1.jpg);
+}
+
+.slick2{
+    background-image: url(../img/carros/slides/slider-1.jpg);
+}
+
+.slick3{
+    background-image: url(../img/carros/slides/slider-2.jpg);
+}
+
+.imgInicial, .segundaSection, .terceiraSection{
+    position: relative;
+}
+
+/* .letrasSlides{
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 50%;
+    left: 20%;
+    z-index: 1;
+}
+
+.caixaTexto span {
+    opacity: 0;
+    animation: fadeIn 5s linear infinite; 
+    animation-delay: calc(.5s * var(--index)); 
+    color: rgba(128, 128, 128, 0.463);
+    font-size: 5em;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; 
+    }
+    50% {
+      opacity: 1; 
+    }
+    100%{
+        opacity: 0;
+    }
+  } */
+
+.secSegConteudo{
+    height: 500px;
+}
+
+.secSegConteudo-item{
+    height: 100px;
+}
