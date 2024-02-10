@@ -1,0 +1,17 @@
+<section class="sectionSeg">
+    <div class="aos-all">
+        <div data-id="1" class="aos-item" data-aos="fade-left"></div>
+        <div data-id="1" class="aos-item" data-aos="fade-right"></div>
+        <div data-id="1" class="aos-item" data-aos="fade-up"></div>
+        <div data-id="2" class="aos-item" data-aos="fade-down"></div>
+        <div data-id="7" class="aos-item" data-aos="fade-in"></div>
+        <div data-id="7" class="aos-item" data-aos="fade-out"></div>
+
+        <div data-id="21" class="aos-item" data-aos="zoom-out"></div>
+        <div data-id="23" class="aos-item" data-aos="zoom-out-up"></div>
+        <div data-id="3" class="aos-item" data-aos="zoom-out-down"></div>
+
+        <div data-id="4" class="aos-item" data-aos="flip-down"></div>
+        <div data-id="5" class="aos-item" data-aos="flip-up"></div>
+    </div>
+</section> 
